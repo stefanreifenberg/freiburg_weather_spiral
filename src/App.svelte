@@ -116,7 +116,7 @@
 	  .addAll(data);
   </script>
   
-  <h2>Maximum temperature in Freiburg from 2017-2019</h2>
+  <h2>Maximum Temperature (°C) in Freiburg i. Br. from 2017-2019</h2>
   
   <figure>
 	<div class="wrapper" bind:clientWidth={width} bind:clientHeight={height}>
