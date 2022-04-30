@@ -30,7 +30,7 @@
 
 	const radiusOffsetAccessor = d => fahrenheitToCelsius(+d.temperatureHigh)
 	// we also show the max temp with a color scale
-	const colorAccessor = d => +d.temperatureHigh
+	const colorAccessor = d => fahrenheitToCelsius(+d.temperatureHigh)
   
 	// create chart dimensions
 	let margin = {
@@ -66,7 +66,7 @@
   
 	// https://github.com/d3/d3-scale#scaleSequential
 	// https://github.com/d3/d3-scale-chromatic
-	$: colorScale = d3.scaleSequential(d3.interpolateGnBu)
+	$: colorScale = d3.scaleSequential(d3.interpolateBuPu)
 	  .domain(d3.extent(data, colorAccessor))
   
 	// draw data
