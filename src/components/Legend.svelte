@@ -39,7 +39,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 0.5em;
+      font-size: 1em;
       font-family: monospace;
       display: flex;
       flex-direction: column;
